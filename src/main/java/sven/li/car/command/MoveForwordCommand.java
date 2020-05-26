@@ -27,7 +27,7 @@ public class MoveForwordCommand implements CarCommand {
 				|| car.getPositionY() > car.getCurrentPark().getParkY() 
 				|| car.getPositionX() < 1
 				|| car.getPositionY() < 1) {
-			throw new CarException("出界");
+			throw new CarException("out of boundary");
 		}
 	}
 
